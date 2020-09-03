@@ -15,5 +15,6 @@ let notArr: Array<any> = [false, 'fsfs', 123132];
 
 let catArr: number[] = ar.concat(arr);
 console.log(catArr);
+
 let index: number = catArr.indexOf(4);
 console.log(index);
