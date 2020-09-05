@@ -16,5 +16,9 @@ let u: undefined = undefined;
 let n: null = null;
 let nu: number = null;
 
+//void
+let notable: void = undefined;
+notable = null;
+
 let add: string = num + str;
 console.log(add);
