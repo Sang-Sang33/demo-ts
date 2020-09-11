@@ -55,3 +55,4 @@ let biNumber: number = add(3, 5, 6, 3, 5, 5, 8, 2, 2, 2, 3);
 
 console.log(biNumber);
 
+let acNumber: number = add(2, 5, 6, 55, 6, 6, 5);
