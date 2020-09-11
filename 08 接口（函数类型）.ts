@@ -43,7 +43,6 @@ console.log(oCC);
 
 //剩余参数
 
-
 function add(a: number, b: number, ...res: number[]): number { 
     let sum: number = a + b;
     for (let i: number = 0; i < res.length; i++) { 
@@ -55,3 +54,4 @@ function add(a: number, b: number, ...res: number[]): number {
 let biNumber: number = add(3, 5, 6, 3, 5, 5, 8, 2, 2, 2, 3);
 
 console.log(biNumber);
+
