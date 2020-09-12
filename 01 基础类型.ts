@@ -19,6 +19,11 @@ let nu: number = null;
 //void
 let notable: void = undefined;
 notable = null;
-
 let add: string = num + str;
 console.log(add);
+
+//any
+let everythingIsOk: any = 12313;
+everythingIsOk = 'fsafasf';
+everythingIsOk = true;
+

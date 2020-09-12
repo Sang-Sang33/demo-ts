@@ -7,6 +7,7 @@ console.log(c);
 enum Result { success = 1, error = -1 };
 let res: Result = Result.error;
 let resName: string = Result[1]; //通过枚举的值映射Result的名字key值
+console.log('Result', Result);
 console.log(res);
 console.log(resName);
 
