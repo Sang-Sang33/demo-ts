@@ -15,3 +15,5 @@ console.log(resName);
 enum CC { red, green = 3, yellow };
 let color: CC = CC.yellow; //4
 console.log(color);
+console.log('green', CC[3]);
+console.log('3', CC['green']);
