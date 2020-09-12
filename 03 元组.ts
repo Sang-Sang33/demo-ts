@@ -8,3 +8,7 @@ console.log(X[2][1]);
 //元组中嵌套元组与数组
 let Xin: [[boolean, string, number], number[], boolean];
 Xin = [[false, 'asf', 544], [111, 22, 5, 5], false];
+
+let any: [any, any] = [12, 33];
+let anyLen: number = any.length;
+console.log(anyLen)
