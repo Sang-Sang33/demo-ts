@@ -6,25 +6,25 @@ interface obj {
 }
 
 // let ar: readonly number[] = [1, 2, 3, 6, 5, 55];
-let ar: ReadonlyArray<number> = [1, 2, 3, 6, 5, 8];
-const arr: number[] = [1, 2, 3, 5, 5, 9];
+let ar1: ReadonlyArray<number> = [1, 2, 3, 6, 5, 8];
+const arr1: number[] = [1, 2, 3, 5, 5, 9];
 //属性用readonly   变量使用const
 
-let oYm: obj = {
+let oYmm: obj = {
     name: 'mimi',
     age: 22,
     hobby: 'cat'
 };
-oYm.sex = '女';
+oYmm.sex = '女';
 
-let oCy: obj = {
+let oCyu: obj = {
     name: 'chaoyue',
     age: 33, sex: '女',
     hobby: 'dog'
 };
-console.log(oYm);
+console.log(oYmm);
 
-interface Person {
+interface Perso {
     name: string,
     readonly age: number,
     tall: string,
@@ -32,13 +32,13 @@ interface Person {
     profession?: string
 }
 
-let Tom: Person = {
+let Tomm: Perso = {
     name: 'Tom',
     age: 33,
     tall: '175cm',
     hobby: 'computer',
     profession: 'watcher'
 }
-Tom.tall = '170cm';
-delete Tom.profession;
-console.log(Tom);
+Tomm.tall = '170cm';
+delete Tomm.profession;
+console.log(Tomm);
