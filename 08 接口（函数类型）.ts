@@ -5,15 +5,15 @@ let mySearch: searchFunc = function (source: string, subString: string) {
     let result = source.search(subString);
     return result > -1;
 }
-let fla: boolean = mySearch('source', 's');
+let fl: boolean = mySearch('source', 's');
 
-console.log(fla);
+console.log(fl);
 
 function sum(x: number, y: number): number[] {
     return [x, y];
 }
-let arr: number[] = sum(3, 4);
-console.log(arr);
+let arr3: number[] = sum(3, 4);
+console.log(arr3);
 
 //可选参数  可选参数要放到参数的末尾
 
@@ -26,11 +26,11 @@ function people(name: string, age?: number): string {
     }
 }
 
-let oYm: string = people('明明', 33);
-console.log(oYm);
+let oYm2: string = people('明明', 33);
+console.log(oYm2);
 
-let oCy: string = people('超越');
-console.log(oCy);
+let oCy2: string = people('超越');
+console.log(oCy2);
 
 //形参默认值
 
@@ -43,7 +43,7 @@ console.log(oCC);
 
 //剩余参数
 
-function add(a: number, b: number, ...res: number[]): number { 
+function add2(a: number, b: number, ...res: number[]): number { 
     let sum: number = a + b;
     for (let i: number = 0; i < res.length; i++) { 
         sum += res[i];
@@ -51,8 +51,18 @@ function add(a: number, b: number, ...res: number[]): number {
     return sum
 }
 
-let biNumber: number = add(3, 5, 6, 3, 5, 5, 8, 2, 2, 2, 3);
+let biNumber: number = add2(3, 5, 6, 3, 5, 5, 8, 2, 2, 2, 3);
 
 console.log(biNumber);
 
-let acNumber: number = add(2, 5, 6, 55, 6, 6, 5);
+let acNumber: number = add2(2, 5, 6, 55, 6, 6, 5);
+
+interface Pel { 
+    (food: string[]): void;
+}
+
+let him: Pel = function eat (food: string[]) { 
+    console.table(food);
+};
+
+him(['fsafas','--b--','--c--','--d--']);
